@@ -1,0 +1,578 @@
+{
+  "version": 2,
+  "app": "PerformanceInsight",
+  "exportType": "dashboard",
+  "creationDate": "2025-11-10T18:41:56.931Z",
+  "dateSettings": {
+    "queryTypeId": "last_3_hours",
+    "dateRange": {
+      "from": null,
+      "to": null
+    },
+    "useCurrentDate": true,
+    "offset": 0
+  },
+  "dimension": {
+    "width": 50,
+    "height": 25
+  },
+  "title": "Bottle Filling Line State",
+  "queryTypes": [],
+  "statusMappings": [
+    {
+      "id": "30b23480-7146-11f0-b70d-4b05750791e1",
+      "name": "Start",
+      "description": "Simulation is starting up",
+      "statusConfiguration": [
+        {
+          "color": "#70009C",
+          "value": 0,
+          "label": "Starting",
+          "description": "Starting up",
+          "excluded": false,
+          "timeCategoryId": "3"
+        },
+        {
+          "color": "#00646E",
+          "value": 1,
+          "label": "Filling Tank",
+          "description": "Filling the Tank",
+          "excluded": false,
+          "timeCategoryId": "3"
+        },
+        {
+          "color": "#647D2D",
+          "value": 2,
+          "label": "Heating Tank",
+          "description": "Heating the Tank",
+          "excluded": false,
+          "timeCategoryId": "3"
+        },
+        {
+          "color": "#65C728",
+          "value": 3,
+          "label": "Filling Bottle",
+          "description": "Filling Bottle",
+          "excluded": false,
+          "timeCategoryId": "4"
+        },
+        {
+          "color": "#637C43",
+          "value": 4,
+          "label": "Shifting Bottle",
+          "description": "Shifting Bottle",
+          "excluded": false,
+          "timeCategoryId": "4"
+        },
+        {
+          "color": "#F62447",
+          "value": 5,
+          "label": "Stopped",
+          "description": "Stopped",
+          "excluded": false,
+          "timeCategoryId": "5"
+        },
+        {
+          "color": "#FFB900",
+          "value": 6,
+          "label": "Reset",
+          "description": "Simulation Reset",
+          "excluded": false,
+          "timeCategoryId": "3"
+        }
+      ],
+      "useTimeCategories": true
+    }
+  ],
+  "widgets": [
+    {
+      "title": "Energy Used",
+      "type": "performance-insight-chart",
+      "dimension": {
+        "width": 29,
+        "height": 12
+      },
+      "dataSourcesSettings": [
+        {
+          "id": "0",
+          "color": "#65C728",
+          "decimalPlaces": 2,
+          "label": "Energy Filling Bottles",
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "1",
+            "aggregation": "TimeWeightedAverage",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.signals_energyConsumptionFillingBottle",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Int32",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        },
+        {
+          "id": "1",
+          "color": "#F62447",
+          "decimalPlaces": 2,
+          "label": "Energy Filling Tank",
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "2",
+            "aggregation": "TimeWeightedAverage",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.signals_energyConsumptionFillingTank",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Int32",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        },
+        {
+          "id": "2",
+          "color": "#FFB900",
+          "decimalPlaces": 2,
+          "label": "Energy Heating Tank",
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "3",
+            "aggregation": "TimeWeightedAverage",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.signals_energyConsumptionHeatingTank",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Int32",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        }
+      ],
+      "dateSettings": {
+        "queryTypeId": "day",
+        "dateRange": {
+          "from": null,
+          "to": null
+        },
+        "useCurrentDate": true,
+        "offset": 0
+      },
+      "kpiCalculationTimeRange": {
+        "timeRange": "hour",
+        "value": 1
+      },
+      "position": {
+        "x": 21,
+        "y": 0
+      },
+      "views": [
+        {
+          "type": "linechart",
+          "xAxis": [
+            {
+              "title": "",
+              "type": "datetime",
+              "isScaled": false,
+              "min": null,
+              "max": null
+            }
+          ],
+          "yAxis": [
+            {
+              "title": "Energy",
+              "type": "linear",
+              "isScaled": true,
+              "min": null,
+              "max": null
+            }
+          ],
+          "series": [
+            {
+              "dataSourceSettingsId": "0",
+              "type": "line",
+              "xAxis": 0,
+              "yAxis": 0,
+              "stacked": true,
+              "visible": true,
+              "step": false
+            },
+            {
+              "dataSourceSettingsId": "1",
+              "type": "line",
+              "xAxis": 0,
+              "yAxis": 0,
+              "stacked": true,
+              "visible": true,
+              "step": false
+            },
+            {
+              "dataSourceSettingsId": "2",
+              "type": "line",
+              "xAxis": 0,
+              "yAxis": 0,
+              "stacked": true,
+              "visible": true,
+              "step": false
+            }
+          ],
+          "showLegend": true
+        }
+      ],
+      "useDashboardDateSettings": true
+    },
+    {
+      "title": "Tank Level",
+      "type": "performance-insight-chart",
+      "dimension": {
+        "width": 25,
+        "height": 13
+      },
+      "dataSourcesSettings": [
+        {
+          "id": "0",
+          "color": "#5814DB",
+          "decimalPlaces": 2,
+          "label": "Tank Level",
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "4",
+            "aggregation": "Last",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.signals_tankLevel",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Float",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        }
+      ],
+      "dateSettings": {
+        "queryTypeId": "day",
+        "dateRange": {
+          "from": null,
+          "to": null
+        },
+        "useCurrentDate": true,
+        "offset": 0
+      },
+      "kpiCalculationTimeRange": {
+        "timeRange": "minute",
+        "value": 10
+      },
+      "position": {
+        "x": 25,
+        "y": 12
+      },
+      "views": [
+        {
+          "type": "linechart",
+          "xAxis": [
+            {
+              "title": "",
+              "type": "datetime",
+              "isScaled": false,
+              "min": null,
+              "max": null
+            }
+          ],
+          "yAxis": [
+            {
+              "title": "Level",
+              "type": "linear",
+              "isScaled": true,
+              "min": null,
+              "max": null
+            }
+          ],
+          "series": [
+            {
+              "dataSourceSettingsId": "0",
+              "type": "line",
+              "xAxis": 0,
+              "yAxis": 0,
+              "stacked": true,
+              "visible": true,
+              "step": false
+            }
+          ],
+          "showLegend": true
+        }
+      ],
+      "useDashboardDateSettings": true
+    },
+    {
+      "title": "Last Serial",
+      "type": "performance-insight-value",
+      "dimension": {
+        "width": 12,
+        "height": 6
+      },
+      "dataSourcesSettings": [
+        {
+          "id": "0",
+          "color": "#00646E",
+          "decimalPlaces": 2,
+          "label": null,
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "5",
+            "aggregation": "Last",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.serialNumber",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "String",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        }
+      ],
+      "dateSettings": {
+        "queryTypeId": "day",
+        "dateRange": {
+          "from": null,
+          "to": null
+        },
+        "useCurrentDate": true,
+        "offset": 0
+      },
+      "kpiCalculationTimeRange": {
+        "timeRange": "minute",
+        "value": 1
+      },
+      "position": {
+        "x": 13,
+        "y": 15
+      },
+      "views": [
+        {
+          "type": "value",
+          "showStatistics": true,
+          "sortBy": "dataSourcesOrder",
+          "showValueWithoutAbbreviation": false,
+          "backgroundColor": null,
+          "showWidgetName": true,
+          "widgetNameColor": null,
+          "widgetTextColor": null,
+          "textAlign": "left",
+          "showGraph": false
+        }
+      ],
+      "useDashboardDateSettings": true
+    },
+    {
+      "title": "Production State",
+      "type": "performance-insight-gantt",
+      "dimension": {
+        "width": 21,
+        "height": 15
+      },
+      "dataSourcesSettings": [
+        {
+          "id": "0",
+          "color": "#00646E",
+          "decimalPlaces": 2,
+          "label": null,
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "6",
+            "aggregation": "Gantt",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.stateMachine",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Int32",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        }
+      ],
+      "dateSettings": {
+        "queryTypeId": "day",
+        "dateRange": {
+          "from": null,
+          "to": null
+        },
+        "useCurrentDate": true,
+        "offset": 0
+      },
+      "kpiCalculationTimeRange": {
+        "timeRange": "hour",
+        "value": 1
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "views": [
+        {
+          "type": "gantt",
+          "series": {
+            "dataSourceSettingsId": "0",
+            "statusMappingId": "30b23480-7146-11f0-b70d-4b05750791e1"
+          }
+        }
+      ],
+      "useDashboardDateSettings": true
+    },
+    {
+      "title": "Machine State",
+      "type": "performance-insight-value",
+      "dimension": {
+        "width": 13,
+        "height": 10
+      },
+      "dataSourcesSettings": [
+        {
+          "id": "0",
+          "color": "#005F87",
+          "decimalPlaces": 0,
+          "label": null,
+          "limits": {
+            "warning": {
+              "high": null,
+              "low": null
+            },
+            "alert": {
+              "high": null,
+              "low": null
+            }
+          },
+          "dataSource": {
+            "type": "Variable",
+            "id": "6",
+            "aggregation": "Last",
+            "name": "Root.Objects.PLC_1.DataBlocksGlobal.Global.stateMachine",
+            "assetId": "fbbba28a-7ed4-4a09-a357-c5c699eca32a",
+            "path": [
+              "edge",
+              "S71512_OPCUA"
+            ],
+            "aspectName": "",
+            "unit": "",
+            "dataType": "Int32",
+            "defaultAggregation": "Average",
+            "acquisitionCategory": "ProcessValue"
+          }
+        }
+      ],
+      "dateSettings": {
+        "queryTypeId": "day",
+        "dateRange": {
+          "from": null,
+          "to": null
+        },
+        "useCurrentDate": true,
+        "offset": 0
+      },
+      "kpiCalculationTimeRange": {
+        "timeRange": "minute",
+        "value": 1
+      },
+      "position": {
+        "x": 0,
+        "y": 15
+      },
+      "views": [
+        {
+          "type": "value",
+          "showStatistics": true,
+          "sortBy": "dataSourcesOrder",
+          "showValueWithoutAbbreviation": false,
+          "backgroundColor": "#50BED7",
+          "showWidgetName": true,
+          "widgetNameColor": "#530E00",
+          "widgetTextColor": "#5814DB",
+          "textAlign": "left",
+          "showGraph": true
+        }
+      ],
+      "useDashboardDateSettings": true
+    }
+  ]
+}

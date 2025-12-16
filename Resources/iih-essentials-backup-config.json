@@ -1,0 +1,1681 @@
+{
+    "dataBusCredentials": {
+        "url": "tcp://ie-databus:1883",
+        "username": "edge",
+        "usercode": "ZWRnZQ=="
+    },
+    "adapters": [
+        {
+            "id": "35f3f66e858745cb87428aea0bfddb8f",
+            "name": "SIMATIC S7 Connector",
+            "type": "simaticadapter",
+            "locked": false,
+            "active": false,
+            "isDefault": false,
+            "canBrowse": true,
+            "config": {
+                "useDatabusSettings": true,
+                "brokerURL": "",
+                "username": "",
+                "usercode": "",
+                "browseURL": "ie/m/j/simatic/v1/s7c1/dp"
+            }
+        },
+        {
+            "id": "9c5773dc9730481da3da3610b544e7dc",
+            "name": "SIMATIC S7 Connector Simulation",
+            "type": "simaticadapter",
+            "locked": false,
+            "active": true,
+            "isDefault": false,
+            "canBrowse": true,
+            "config": {
+                "useDatabusSettings": true,
+                "brokerURL": "",
+                "username": "",
+                "usercode": "",
+                "browseURL": "ie/m/j/simatic/v1/s7c1simulation/dp"
+            }
+        },
+        {
+            "id": "hmiruntime",
+            "name": "HmiRuntime",
+            "type": "hmiruntime",
+            "locked": true,
+            "active": false,
+            "isDefault": false,
+            "canBrowse": true,
+            "config": {
+                "openPipePath": "/tmp/siemens/automation/HmiRuntime"
+            }
+        },
+        {
+            "id": "systeminfo",
+            "name": "System Info",
+            "type": "systeminfo",
+            "locked": true,
+            "active": false,
+            "isDefault": false,
+            "canBrowse": true,
+            "config": {}
+        }
+    ],
+    "assets": [
+        {
+            "assetId": "0",
+            "name": "edge",
+            "parentId": "",
+            "hasChildren": true,
+            "sortOrder": 0
+        },
+        {
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "name": "VPLC",
+            "parentId": "0",
+            "hasChildren": false,
+            "sortOrder": 0
+        },
+        {
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "name": "operate",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 0
+        },
+        {
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "name": "model",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 1
+        },
+        {
+            "assetId": "cc5ce51f2e50493685c9620bb39e9446",
+            "name": "VPLCSimulation",
+            "parentId": "0",
+            "hasChildren": true,
+            "sortOrder": 1
+        },
+        {
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "name": "externSignals",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 2
+        },
+        {
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "name": "signals",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 3
+        },
+        {
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "name": "process",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 4
+        },
+        {
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "name": "hmiSignals",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 5
+        },
+        {
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "name": "appSignals",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 6
+        },
+        {
+            "assetId": "b9c5895652b24eae9c640cdd4f2a7631",
+            "name": "projectInfo",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 7
+        },
+        {
+            "assetId": "e63806120a7d43e78da75faf27025ed8",
+            "name": "productInfo",
+            "parentId": "cc5ce51f2e50493685c9620bb39e9446",
+            "hasChildren": false,
+            "sortOrder": 8
+        }
+    ],
+    "aspects": [
+        {
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "aspectName": "energySignals",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "aspectName": "energySignals",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "aspectName": "tank",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "6fdb186b98c048e1af7948cc0ccf1e47",
+            "aspectName": "bottle",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "76836fab8aac4a2bb10a079f75f0684d",
+            "aspectName": "bottleSignals",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "aspectName": "tankSignals",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "cecaee2793964d499301433601598e6f",
+            "aspectName": "bottleSignals",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "aspectName": "tankSignal",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectTypeId": null
+        },
+        {
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "aspectName": "state",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectTypeId": null
+        }
+    ],
+    "variables": [
+        {
+            "variableId": "03f5008478014caba131865a37245659",
+            "variableName": "GDB.model.tank.density",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.density::4::22",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.density"
+            }
+        },
+        {
+            "variableId": "0cde558bc42d4f48a784253c74f92e7b",
+            "variableName": "GDB.signals.tankSignals.actPressure[bar]",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "Bar",
+            "adapterId": null,
+            "topic": "",
+            "store": true,
+            "sourceType": "Rule",
+            "rule": {
+                "formula": "var1== 0 ? 0 : var2/1000",
+                "tags": [
+                    {
+                        "name": "var1",
+                        "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                        "connectionName": "vplc",
+                        "tagName": "GDB.signals.tankSignals.actPressure",
+                        "dataType": "Float"
+                    },
+                    {
+                        "name": "var2",
+                        "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                        "connectionName": "vplc",
+                        "tagName": "GDB.signals.tankSignals.actPressure",
+                        "dataType": "Float"
+                    }
+                ]
+            }
+        },
+        {
+            "variableId": "103c6050073c4d6f81743839f005e66b",
+            "variableName": "GDB.signals.tankSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.tankSignals.maxLevel::4::32",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "1141459ff5374626bbda61a81e1483fe",
+            "variableName": "GDB.externalSignals.tankSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.tankSignals.maxLevel::4::40",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.tankSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "1199dc56baad48059ca01163f1b150fe",
+            "variableName": "GDB.externalSignals.tankSignals.actTemperature",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.tankSignals.actTemperature::4::46",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.tankSignals.actTemperature"
+            }
+        },
+        {
+            "variableId": "168b16d025574cbbbabdd2b34a521eb8",
+            "variableName": "GDB.hmiSignals.HMI_Start",
+            "dataType": "Bool",
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.hmiSignals.HMI_Start::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.hmiSignals.HMI_Start"
+            }
+        },
+        {
+            "variableId": "18f2134d466043d4bb7656ef963e4cd8",
+            "variableName": "GDB.signals.bottleSignals.outputTank",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.bottleSignals.outputTank::4::36",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.outputTank"
+            }
+        },
+        {
+            "variableId": "1a2f60b41d8a4adb8c07131ab8699fa1",
+            "variableName": "GDB.hmiSignals.HMI_Reset",
+            "dataType": "Bool",
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.hmiSignals.HMI_Reset::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.hmiSignals.HMI_Reset"
+            }
+        },
+        {
+            "variableId": "1c3d86745ede40ff96a573134fd480be",
+            "variableName": "GDB.externalSignals.energySignals.energyConsumptionFillingBottles",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.energySignals.energyConsumptionFillingBottles::4::65",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.energySignals.energyConsumptionFillingBottles"
+            }
+        },
+        {
+            "variableId": "1f5eb7ad9e08459c84946720f5895667",
+            "variableName": "GDB.externalSignals.bottleSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "cecaee2793964d499301433601598e6f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.bottleSignals.maxLevel::4::42",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.bottleSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "202b6d2f08b5401d9934c5a3d36b4ce1",
+            "variableName": "GDB.signals.tankSignals.actTemperature",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.tankSignals.actTemperature::4::38",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actTemperature"
+            }
+        },
+        {
+            "variableId": "21be26f1195748fc902c9ee7d15cefc6",
+            "variableName": "GDB.model.bottle.maxLevel",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "6fdb186b98c048e1af7948cc0ccf1e47",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.bottle.maxLevel::4::25",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.bottle.maxLevel"
+            }
+        },
+        {
+            "variableId": "21e640ec2f5e4197a7261c80956d82b4",
+            "variableName": "GDB.signals.energySignals.energyConsumptionFillingBottles",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionFillingBottles::4::57",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionFillingBottles"
+            }
+        },
+        {
+            "variableId": "22c60b69248043b88b94617b23a029ac",
+            "variableName": "GDB.model.tank.maxTemperature",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.maxTemperature::4::29",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.maxTemperature"
+            }
+        },
+        {
+            "variableId": "2aa83abc9dfa4b548a796db900c143d8",
+            "variableName": "GDB.appSignals.APP_Start",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_Start::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_Start"
+            }
+        },
+        {
+            "variableId": "31196c1a7a514eb5a19b6fe6bbf5918c",
+            "variableName": "GDB.appSignals.APP_Stop",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_Stop::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_Stop"
+            }
+        },
+        {
+            "variableId": "343ab149892a465e9411f2119bbae0d5",
+            "variableName": "GDB.hmiSignals.HMI_Error",
+            "dataType": "Bool",
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.hmiSignals.HMI_Error::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.hmiSignals.HMI_Error"
+            }
+        },
+        {
+            "variableId": "3a7eb716895b44c1a3cace5f3010a521",
+            "variableName": "GDB.signals.bottleSignals.outputTank",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "76836fab8aac4a2bb10a079f75f0684d",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.bottleSignals.outputTank::4::36",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.outputTank"
+            }
+        },
+        {
+            "variableId": "3c94d652e0a4446692ced716a5e53eb8",
+            "variableName": "GDB.signals.energySignals.gasConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.energySignals.gasConsumptionHeatingTank::4::51",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.gasConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "3f3d6d920db94f6b8ad0792e23dad152",
+            "variableName": "GDB.externalSignals.tankSignals.maxTemperature",
+            "dataType": "Bool",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.tankSignals.maxTemperature::4::46",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.tankSignals.maxTemperature"
+            }
+        },
+        {
+            "variableId": "47caea2a36c84f019ef7dd53c0c8dabf",
+            "variableName": "GDB.projectInfo.version",
+            "dataType": "String",
+            "assetId": "b9c5895652b24eae9c640cdd4f2a7631",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.projectInfo.version::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.projectInfo.version"
+            }
+        },
+        {
+            "variableId": "492e2052594d40beb2be47b6def9c902",
+            "variableName": "GDB.model.tank.Vin",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.Vin::4::18",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.Vin"
+            }
+        },
+        {
+            "variableId": "4978ce50c7d74dcea769ac0cd2e93ab1",
+            "variableName": "GDB.externalSignals.bottleSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "cecaee2793964d499301433601598e6f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.bottleSignals.actLevel::4::42",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.bottleSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "4989322aef254e89a7c7e151580867d2",
+            "variableName": "GDB.signals.bottleSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "76836fab8aac4a2bb10a079f75f0684d",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.bottleSignals.maxLevel::4::34",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "4dcf12e1e0fa46ff874c946055ecb150",
+            "variableName": "GDB.externalSignals.energySignals.waterConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.energySignals.waterConsumptionFillingTank::4::61",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.energySignals.waterConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "51a5cd50b56740a1a7e8f5f99dc335bc",
+            "variableName": "GDB.externalSignals.alarm",
+            "dataType": "UInt16",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.alarm::4::25",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.alarm"
+            }
+        },
+        {
+            "variableId": "623916c5b9ae43bda0e855a5be307789",
+            "variableName": "GDB.serialNumber",
+            "dataType": "String",
+            "assetId": "e63806120a7d43e78da75faf27025ed8",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.serialNumber::4::16",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.serialNumber"
+            }
+        },
+        {
+            "variableId": "66f88c5d0cba4d299243c39487400587",
+            "variableName": "GDB.operate.state.HeatingTank",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.HeatingTank::4::29",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.HeatingTank"
+            }
+        },
+        {
+            "variableId": "68d3ba8254c24736a1bec1c82b5643c4",
+            "variableName": "GDB.signals.tankSignals.actPressure",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.tankSignals.actPressure::4::35",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actPressure"
+            }
+        },
+        {
+            "variableId": "6bb18b8a4a81403fb1912c2c5f2bbc89",
+            "variableName": "GDB.operate.state.Error",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.Error::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.Error"
+            }
+        },
+        {
+            "variableId": "6d017bc38da7414aa300c55606a7c596",
+            "variableName": "GDB.externalSignals.energySignals.energyConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.energySignals.energyConsumptionFillingTank::4::62",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.energySignals.energyConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "70e86e0e18184fcfb2dd842126c0a3d8",
+            "variableName": "GDB.model.tank.H",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.H::4::16",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.H"
+            }
+        },
+        {
+            "variableId": "71aa3a41cb084160956126c5e608d909",
+            "variableName": "GDB.model.tank.roomTemperature",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.roomTemperature::4::30",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.roomTemperature"
+            }
+        },
+        {
+            "variableId": "72637f7acc2644259d76da867908c265",
+            "variableName": "GDB.hmiSignals.HMI_Stop",
+            "dataType": "Bool",
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.hmiSignals.HMI_Stop::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.hmiSignals.HMI_Stop"
+            }
+        },
+        {
+            "variableId": "74dc3aa9ccdf401ca72796a447272abf",
+            "variableName": "GDB.signals.alarm",
+            "dataType": "UInt16",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.alarm::4::17",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.alarm"
+            }
+        },
+        {
+            "variableId": "774ce16fd0cf46f194ee9bcb6607770e",
+            "variableName": "GDB.operate.state.Stop",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.Stop::4::22",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.Stop"
+            }
+        },
+        {
+            "variableId": "7df7120a2aa7412ca46e36bb1e70b300",
+            "variableName": "GDB.appSignals.APP_QRCode",
+            "dataType": "String",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_QRCode::4::25",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_QRCode"
+            }
+        },
+        {
+            "variableId": "81ac82d9374e4821bcbc9bdd8188edc1",
+            "variableName": "GDB.operate.state.FillingTank",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.FillingTank::4::29",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.FillingTank"
+            }
+        },
+        {
+            "variableId": "831679491bdd47c6a4332de36d1c9b5b",
+            "variableName": "GDB.process.numberFaulty",
+            "dataType": "UInt32",
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.process.numberFaulty::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.process.numberFaulty"
+            }
+        },
+        {
+            "variableId": "887143c4dfa94022941b780930ed9aa0",
+            "variableName": "GDB.signals.energySignals.waterConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.energySignals.waterConsumptionFillingTank::4::53",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.waterConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "93c2598ab62942e098651368b288e3b1",
+            "variableName": "GDB.operate.extModeActive",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.extModeActive::4::25",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.extModeActive"
+            }
+        },
+        {
+            "variableId": "99059cb4c4e84d9aa61be88328717d0f",
+            "variableName": "GDB.signals.energySignals.energyConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionHeatingTank::4::54",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "993746f947f94cd4a0e49c01cbe89b15",
+            "variableName": "GDB.model.tank.AT",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.AT::4::17",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.AT"
+            }
+        },
+        {
+            "variableId": "9943bb2124e24d9d89bd07afc9ca8b10",
+            "variableName": "GDB.signals.tankSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.tankSignals.maxLevel::4::32",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "9b249d5f002f4ef7871186da9d8ae973",
+            "variableName": "GDB.process.batchId",
+            "dataType": "UInt32",
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.process.batchId::4::19",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.process.batchId"
+            }
+        },
+        {
+            "variableId": "9badd81d741446c99a882380c6f071a5",
+            "variableName": "GDB.externalSignals.tankSignals.actPressure",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.tankSignals.actPressure::4::43",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.tankSignals.actPressure"
+            }
+        },
+        {
+            "variableId": "a14c11cea8e44780b08de940531a581c",
+            "variableName": "GDB.process.productId",
+            "dataType": "UInt32",
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.process.productId::4::21",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.process.productId"
+            }
+        },
+        {
+            "variableId": "a4a4b684edd9409bb3f9feffd5c60069",
+            "variableName": "GDB.signals.tankSignals.maxTemperature",
+            "dataType": "Bool",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.tankSignals.maxTemperature::4::38",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.maxTemperature"
+            }
+        },
+        {
+            "variableId": "a78ef279bdaa473f813f3dae7a174ac5",
+            "variableName": "GDB.signals.energySignals.energyConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionHeatingTank::4::54",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "aa7363bf4ff84caa8c7781abd69d06c3",
+            "variableName": "GDB.externalSignals.bottleSignals.outputTank",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "cecaee2793964d499301433601598e6f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.bottleSignals.outputTank::4::44",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.bottleSignals.outputTank"
+            }
+        },
+        {
+            "variableId": "ac20ba07a747439985d295ef22ec8f9f",
+            "variableName": "GDB.externalSignals.energySignals.energyConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.energySignals.energyConsumptionHeatingTank::4::62",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.energySignals.energyConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "ac772a45a77a457e800464130a8dbc1b",
+            "variableName": "GDB.model.cycleTime",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.cycleTime::4::19",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.cycleTime"
+            }
+        },
+        {
+            "variableId": "acef5e4118a041b5aa0d2e90aa994753",
+            "variableName": "GDB.appSignals.APP_Error",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_Error::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_Error"
+            }
+        },
+        {
+            "variableId": "ae1f4f8c42a54cf1a1d383939749a9cf",
+            "variableName": "GDB.appSignals.APP_Reset",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_Reset::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_Reset"
+            }
+        },
+        {
+            "variableId": "b375f65f9a7848f9839a22fe13db9162",
+            "variableName": "GDB.signals.bottleSignals.maxLevel",
+            "dataType": "Bool",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.bottleSignals.maxLevel::4::34",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.maxLevel"
+            }
+        },
+        {
+            "variableId": "b430265758574cb79d76db9b48a330c8",
+            "variableName": "GDB.operate.state.Reset",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.Reset::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.Reset"
+            }
+        },
+        {
+            "variableId": "b5d7b4246a4c44b59ab8e7d975e096fe",
+            "variableName": "GDB.appSignals.APP_Alarm",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_Alarm::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_Alarm"
+            }
+        },
+        {
+            "variableId": "ba2d73ee3d0345128376be40a212e36e",
+            "variableName": "GDB.operate.state.ShiftingBottle",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.ShiftingBottle::4::32",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.ShiftingBottle"
+            }
+        },
+        {
+            "variableId": "bdf7a95ad4394fbfba527320cdc0c39f",
+            "variableName": "GDB.signals.bottleSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "76836fab8aac4a2bb10a079f75f0684d",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.bottleSignals.actLevel::4::34",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "c3375cc177bd4dfca8200912f7050d6c",
+            "variableName": "GDB.model.bottle.AB",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "6fdb186b98c048e1af7948cc0ccf1e47",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.bottle.AB::4::19",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.bottle.AB"
+            }
+        },
+        {
+            "variableId": "c5b1ad8e3d8f47d19e6f14d6f4bc4ed8",
+            "variableName": "GDB.model.tank.maxLevel",
+            "dataType": "Float",
+            "assetId": "51221d7d6a0a400f8b7ba63ccd2e8ba3",
+            "aspectId": "591263f12aaa41f3a81f3746fd752421",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.model.tank.maxLevel::4::23",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.model.tank.maxLevel"
+            }
+        },
+        {
+            "variableId": "c639a0b8d0b0472c934fe707adb01a78",
+            "variableName": "GDB.projectInfo.date",
+            "dataType": "String",
+            "assetId": "b9c5895652b24eae9c640cdd4f2a7631",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.projectInfo.date::4::20",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.projectInfo.date"
+            }
+        },
+        {
+            "variableId": "c684b10406874fe09273696e6f0e69d9",
+            "variableName": "GDB.signals.tankSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.tankSignals.actLevel::4::32",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "c7ee835f44cc4c29a6f306dc2ea7aeb2",
+            "variableName": "GDB.externalSignals.tankSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "db8fa81c23f54e27b857d319af2b2ceb",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.tankSignals.actLevel::4::40",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.tankSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "ccb0870480ba4b858109492155f7cfc9",
+            "variableName": "GDB.operate.state.FillingBottle",
+            "dataType": "Bool",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "fd1fc38dd467401f9b35b980db567790",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.state.FillingBottle::4::31",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.state.FillingBottle"
+            }
+        },
+        {
+            "variableId": "cef96cb947c74f36b33e2c3fa573cdb7",
+            "variableName": "GDB.signals.tankSignals.actTemperature",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.tankSignals.actTemperature::4::38",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actTemperature"
+            }
+        },
+        {
+            "variableId": "d0ec7d872d674173af6e017c1da04151",
+            "variableName": "GDB.signals.energySignals.energyConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionFillingTank::4::54",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "d5ff9da902404975abda5630187e1094",
+            "variableName": "GDB.signals.alarm",
+            "dataType": "UInt16",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.alarm::4::17",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.alarm"
+            }
+        },
+        {
+            "variableId": "d70f16956af745f2a158554b149dd6b3",
+            "variableName": "GDB.externalSignals.energySignals.gasConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "2f08c1d4a52446a6acd587b05592e1f5",
+            "aspectId": "497db68934094f2e8cca6e7dc25c977f",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.externalSignals.energySignals.gasConsumptionHeatingTank::4::59",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.externalSignals.energySignals.gasConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "e4065777e6c845558b4809e36fda76bd",
+            "variableName": "GDB.signals.energySignals.gasConsumptionHeatingTank",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "20d55934c3fb4a6583e8a6d7d4b111fa",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.energySignals.gasConsumptionHeatingTank::4::51",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.gasConsumptionHeatingTank"
+            }
+        },
+        {
+            "variableId": "e6c8cd994d1c4896ad87f5015c820f5c",
+            "variableName": "GDB.signals.bottleSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.bottleSignals.actLevel::4::34",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.bottleSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "e72f47387c6b419ebcfbbbc3f22d38fa",
+            "variableName": "GDB.signals.energySignals.energyConsumptionFillingBottles",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionFillingBottles::4::57",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionFillingBottles"
+            }
+        },
+        {
+            "variableId": "eea2cc71f84f4b9cba552c4e9b16ab69",
+            "variableName": "GDB.process.numberProduced",
+            "dataType": "UInt32",
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.process.numberProduced::4::26",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.process.numberProduced"
+            }
+        },
+        {
+            "variableId": "f05dc8895edc4fd39acc70b70db10a31",
+            "variableName": "GDB.signals.energySignals.waterConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.energySignals.waterConsumptionFillingTank::4::53",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.waterConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "f0e71769d4fb4938a2cd693167daa952",
+            "variableName": "GDB.signals.energySignals.energyConsumptionFillingTank",
+            "dataType": "Float",
+            "assetId": "14bbae0935a345bcbbea2c2f31551186",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+            "topic": "vplc::GDB.signals.energySignals.energyConsumptionFillingTank::4::54",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "35f3f66e858745cb87428aea0bfddb8f",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.energySignals.energyConsumptionFillingTank"
+            }
+        },
+        {
+            "variableId": "f1dd707ca9b2482da624c390870454d5",
+            "variableName": "GDB.hmiSignals.HMI_NextBottle",
+            "dataType": "Bool",
+            "assetId": "bb9b212fd2e544e68def3097d1240d70",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.hmiSignals.HMI_NextBottle::4::29",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.hmiSignals.HMI_NextBottle"
+            }
+        },
+        {
+            "variableId": "f5d95b014f0047aca6119fdd20e50007",
+            "variableName": "GDB.operate.machineState",
+            "dataType": "Int16",
+            "assetId": "9bdcd448740b40b79e52ab90551033c9",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.operate.machineState::4::24",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.operate.machineState"
+            }
+        },
+        {
+            "variableId": "f6bb5107d39d458db64e8ce41a992dc5",
+            "variableName": "GDB.signals.tankSignals.maxTemperature",
+            "dataType": "Bool",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.tankSignals.maxTemperature::4::38",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.maxTemperature"
+            }
+        },
+        {
+            "variableId": "f6c1966935aa448eaf29d1175de68ec0",
+            "variableName": "GDB.signals.tankSignals.actLevel",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.tankSignals.actLevel::4::32",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actLevel"
+            }
+        },
+        {
+            "variableId": "f7700d421c8c4e24998525cc789dbdc8",
+            "variableName": "GDB.signals.tankSignals.actPressure",
+            "dataType": "Float",
+            "assetId": "6899e67aeaa446a4a93fde44c677bddb",
+            "aspectId": "a86fd1bce1ec4a1db9c3a0641a7bdc59",
+            "unit": "hPa",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.signals.tankSignals.actPressure::4::35",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.signals.tankSignals.actPressure"
+            }
+        },
+        {
+            "variableId": "fb0dd6a30fc549e5bc58c8474cf1d712",
+            "variableName": "GDB.process.numberGood",
+            "dataType": "UInt32",
+            "assetId": "95d33eb88fd846439a06d39d957c2052",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.process.numberGood::4::22",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.process.numberGood"
+            }
+        },
+        {
+            "variableId": "fffc3d5c6be442bf88f893bd41b8768c",
+            "variableName": "GDB.appSignals.APP_NextBottle",
+            "dataType": "Bool",
+            "assetId": "9f82ae65a5f74f929f8384db24f64310",
+            "aspectId": "",
+            "unit": "",
+            "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+            "topic": "vplc::GDB.appSignals.APP_NextBottle::4::29",
+            "store": true,
+            "sourceType": "Tag",
+            "tag": {
+                "adapterId": "9c5773dc9730481da3da3610b544e7dc",
+                "connectionName": "vplc",
+                "tagName": "GDB.appSignals.APP_NextBottle"
+            }
+        }
+    ],
+    "dataDestinations": [],
+    "dataRetentions": [
+        {
+            "sourceId": "0",
+            "sourceTypeId": "asset",
+            "settings": {
+                "timeSettings": {
+                    "timeRange": {
+                        "base": "day",
+                        "factor": 30
+                    }
+                }
+            }
+        }
+    ],
+    "dataSyncs": [],
+    "aggregations": [],
+    "aspectTypes": [
+        {
+            "id": "StepChainAnalysis_InitialStep",
+            "name": "StepChainAnalysis_InitialStep",
+            "isSystemType": true
+        },
+        {
+            "id": "StepChainAnalysis_Step",
+            "name": "StepChainAnalysis_Step",
+            "isSystemType": true
+        }
+    ],
+    "aspectTypeVariables": [
+        {
+            "id": "StepChainAnalysis_InitialStep_ActiveState",
+            "name": "ActiveState",
+            "dataType": "Bool",
+            "unit": "",
+            "aspectTypeId": "StepChainAnalysis_InitialStep"
+        },
+        {
+            "id": "StepChainAnalysis_InitialStep_Product",
+            "name": "Product",
+            "dataType": "String",
+            "unit": "",
+            "aspectTypeId": "StepChainAnalysis_InitialStep"
+        },
+        {
+            "id": "StepChainAnalysis_Step_ActiveState",
+            "name": "ActiveState",
+            "dataType": "Bool",
+            "unit": "",
+            "aspectTypeId": "StepChainAnalysis_Step"
+        }
+    ],
+    "variableConfigurations": [
+        {
+            "variableId": "0cde558bc42d4f48a784253c74f92e7b",
+            "unit": "Bar",
+            "isAggregated": false,
+            "acquisitionCategory": "ProcessValue",
+            "acquisitionCycle": {
+                "base": "acyclic",
+                "factor": 0
+            },
+            "counterConfigurations": []
+        }
+    ],
+    "alarmChannels": []
+}
