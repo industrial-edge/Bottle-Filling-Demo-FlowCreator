@@ -27,11 +27,11 @@ This app is a demonstrator that shows what data you could present via **Industri
 - Installing all [required apps](#22-required-apps) on the Industrial Edge (Virtual) Device (out of scope for this tutorial)
 
 ### 2.2. Required Apps
-- **Flow Creator**
-- **Databus**
-- **IIH Essentials**
-- **Performance Insight**
-- **Energy Manager**
+- **Flow Creator** (**v1.18** or newer)
+- **Databus** (**v3.0.2** or newer)
+- **IIH Essentials** (**v2.0.0** or newer)
+- **Performance Insight** (**v1.18.1** or newer)
+- **Energy Manager** (**v1.18** or newer)
 
 ### 2.3. Required Files
 - [flows.json](./src/flows.json) - Contains the Node-RED code to be deployed in **FlowCreator**. It simulates a bottle filling line and sends emulated production data to the **Databus**.
