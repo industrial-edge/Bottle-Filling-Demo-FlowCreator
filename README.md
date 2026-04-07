@@ -25,6 +25,19 @@ This app is a demonstrator that shows what data you could present via **Industri
 
 - Setting up a working Industrial Edge Hub / Industrial Edge Management / Industrial Edge (Virtual) Device environment (out of scope for this tutorial)
 - Installing all [required apps](#22-required-apps) on the Industrial Edge (Virtual) Device (out of scope for this tutorial)
+- Before starting this demo, ensure the following:
+    - Industrial Edge Management (IEMC) is available
+    - IEVD is onboarded and running
+    - Required apps are installed and started:
+        - Flow Creator
+        - Databus
+        - IIH Essentials
+        - Performance Insight
+    - You have access to:
+        - IEVD UI
+        - IEMC UI
+       
+⚠️ Note: If IEVD is stopped, restart it via the desktop icon.
 
 ### 2.2. Required Apps
 - **Flow Creator** (**v1.18** or newer)
