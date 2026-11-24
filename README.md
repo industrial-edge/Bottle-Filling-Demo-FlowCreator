@@ -92,6 +92,16 @@ configured in the [previous section 3.1.](#31-configure-databus).
 
 > [!note]
 > Note that the core logic for creating the data is implemented within the function "Simulation". Feel free to open the function and review the `JavaScript` code.
+> After importing the flow or modifying its configuration, remember to click **Deploy** in the upper-right corner of the Flow Creator editor to apply the changes.
+>
+> Once the MQTT output nodes show a green **connected** status:
+> 1. Click the small square button on the left of the **inject** node under *Register Metadatatopic at the Databus* to publish the metadata.
+> 2. Click the small square button on the left of the **timestamp** node under *Simulation of the values* to trigger the simulation.
+>
+> If you change the MQTT connection settings, click **Deploy** again before repeating these steps.
+>
+> **Important:** A yellow **connecting** status means that the MQTT connection has not yet been established. Check the Databus connection settings before proceeding; clicking the inject buttons will not resolve a connection issue.
+
 
 ### 3.3. Configure IIH Essentials
 
